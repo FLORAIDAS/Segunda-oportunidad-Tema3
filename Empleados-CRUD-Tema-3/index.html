@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EJEMPLO DE CRUD </title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="Numero"> Numero </label>
+                        <input type="text" name="NumeroAl" id="Numero">
+                    </div>
+                    <div>
+                        <label for="Nombre"> Nombre del empleado </label>
+                        <input type="text" name="Nombre" id="Nombre">
+                    </div>
+                    <div>
+                        <label for="Oficina"> Oficina </label>
+                        <input minlength="3" maxlength="3" type="text" name="Oficina" id="Oficina">
+                    </div>
+                    <div>
+                        <label for="Sueldo"> Sueldo </label>
+                        <input minlength="3" maxlength="3" type="text" name="Sueldo" required="" id="Sueldo">
+                    </div>
+                    <div class="Botones">
+                        <input type="submit" value="Agregar" id="agregar">
+                        <input type="reset" value="Limpiar" id="limpiar">
+                    </div>
+                </form>
+                <td>
+                    <table class="lista" id="Encabezados">
+                        <thead>
+                            <tr>
+                                <th> Numero </th>
+                                <th> Nombre </th>
+                                <th> Oficina </th>
+                                <th> Sueldo </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </td>        
+            </td>
+        </tr>
+    </table>
+
+    
+    <script src="logica.js"> </script>
+
+   
+  </body>
+</html>
